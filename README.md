@@ -32,9 +32,19 @@ Just type ```npm test``` or ```grunt test``` to compile and run all test as well
 To test your code, you can write nice code like ```promise.should.become "promise fulfilled"``` and ```promise.should.be.rejectedWith Error, "promise rejected"``` instead of calling
 
 ```javascript
-promises.then (a) ->
+promise.then (a) ->
   a.should.equal "promise fulfilled"
   done()
 , (err) ->
   done err
+```
+
+and
+
+```javascript
+promise.then (a) ->
+  done new Error "promise was fulfilled. Expected rejection"
+, (err) ->
+  a.message.should.equal "promise rejected"
+  done()
 ```
