@@ -1,0 +1,37 @@
+{
+  "name": "back-end-worker-boilerplate",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "scripts": {
+    "start": "node node_modules/grunt-cli/bin/grunt",
+    "test": "node node_modules/grunt-cli/bin/grunt test"
+  },
+  "dependencies": {
+    "bluebird": "latest",
+    "coffee-script": "latest",
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "grunt-env": "latest",
+    "source-map-support": "latest"
+  },
+  "devDependencies": {
+    "blanket": "latest",
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "grunt-coffeelint": "latest",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-coffee": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-mocha-test": "latest",
+    "grunt-node-inspector": "latest",
+    "grunt-nodemon": "latest",
+    "mocha": "latest",
+    "mocha-as-promised": "latest"
+  }
+}
