@@ -30,7 +30,9 @@ Just type ```npm test``` or ```grunt test``` to compile and run all test as well
 ## Testing promises with sugar
 
 To test your code, you can write nice code like ```promise.should.become "promise fulfilled"``` and ```promise.should.be.rejectedWith Error, "promise rejected"``` instead of calling
-```promises.then (a) ->
+
+```javascript
+promises.then (a) ->
   a.should.equal "promise fulfilled"
   done()
 , (err) ->
